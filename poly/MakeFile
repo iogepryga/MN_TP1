@@ -32,4 +32,4 @@ poly_creux.o: poly_creux.c poly_creux.h
 
 
 clean:
-	rm -f test_poly perf_poly *.o
+	rm -f test_poly perf_poly test_poly_creux *.o
