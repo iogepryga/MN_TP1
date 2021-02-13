@@ -36,16 +36,16 @@ poly_creux.o: poly_creux.c poly_creux.h
 
 
 
-test_poly_creux_tom: test_poly_creux_tom.o poly_creux_tom.o
-	gcc $(GCC_OPT) -o test_poly_creux_tom test_poly_creux_tom.o poly_creux_tom.o
+test_poly_creux_loris: test_poly_creux_loris.o poly_creux_loris.o
+	gcc $(GCC_OPT) -o test_poly_creux_loris test_poly_creux_loris.o poly_creux_loris.o
 	rm -f *.o
 
-test_poly_creux_tom.o: test_poly_creux_tom.c poly_creux_tom.h
-	gcc $(GCC_OPT) -c test_poly_creux_tom.c
+test_poly_creux_loris.o: test_poly_creux_loris.c poly_creux_loris.h
+	gcc $(GCC_OPT) -c test_poly_creux_loris.c
 
-poly_creux_tom.o: poly_creux_tom.c poly_creux_tom.h
-	gcc $(GCC_OPT) -c poly_creux_tom.c
+poly_creux_loris.o: poly_creux_loris.c poly_creux_loris.h
+	gcc $(GCC_OPT) -c poly_creux_loris.c
 
 
 clean:
-	rm -f test_poly perf_poly test_poly_creux test_poly_creux_tom *.o
+	rm -f test_poly perf_poly test_poly_creux test_poly_creux_loris *.o
