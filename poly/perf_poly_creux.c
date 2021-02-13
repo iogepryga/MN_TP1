@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "poly.h"
+#include "poly_creux.h"
 
 #include <x86intrin.h>
 
@@ -24,19 +24,14 @@ int main (int argc, char **argv)
       exit (-1) ;
     }
       
-  p1 = lire_polynome_float (argv [1]) ;
-  p2 = lire_polynome_float (argv [2]) ;
+  p1 = lire_polynome_float (argv[1]) ;
+  p2 = lire_polynome_float (argv[2]) ;
 
-  printf ("p1 = ") ;
+  printf ("%s = ",argv[1]) ;
   ecrire_polynome_float (p1) ;
 
-  printf ("p2 = ") ;
+  printf ("%s = ",argv[2]) ;
   ecrire_polynome_float (p2) ;
-
-  /*
-    ajouter du code pour tester les fonctions
-    sur les polynomes
-  */
 
   start = _rdtsc () ;
   

@@ -12,6 +12,16 @@ perf_poly.o: perf_poly.c poly.h
 	gcc $(GCC_OPT) -c perf_poly.c
 
 
+perf_poly_creux: perf_poly_creux.o poly_creux.o
+	gcc $(GCC_OPT) -o perf_poly perf_poly_creux.o poly_creux.o
+	rm -f *.o
+
+perf_poly_creux.o: perf_poly_creux.c poly_creux.h
+	gcc $(GCC_OPT) -c perf_poly_creux.c
+
+
+
+
 test_poly: test_poly.o poly.o
 	gcc $(GCC_OPT) -o test_poly test_poly.o poly.o
 	rm -f *.o
