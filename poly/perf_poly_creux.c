@@ -15,7 +15,7 @@ void calcul_flop (char *message, int nb_operations_flottantes, unsigned long lon
 
 int main (int argc, char **argv)
 {
-  p_polyf_t p1, p2, p3, p4, p5, p6 ;
+  p_polyf_creux_t p1, p2, p3, p4, p5, p6 ;
   unsigned long long start, end ;
   
   if (argc != 3)
@@ -24,14 +24,19 @@ int main (int argc, char **argv)
       exit (-1) ;
     }
       
-  p1 = lire_polynome_float (argv[1]) ;
-  p2 = lire_polynome_float (argv[2]) ;
+  p1 = lire_polynome_float (argv [1]) ;
+  p2 = lire_polynome_float (argv [2]) ;
 
-  printf ("%s = ",argv[1]) ;
+  printf ("p1 = ") ;
   ecrire_polynome_float (p1) ;
 
-  printf ("%s = ",argv[2]) ;
+  printf ("p2 = ") ;
   ecrire_polynome_float (p2) ;
+
+  /*
+    ajouter du code pour tester les fonctions
+    sur les polynomes
+  */
 
   start = _rdtsc () ;
   

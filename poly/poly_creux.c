@@ -265,7 +265,7 @@ float eval_polynome (p_polyf_creux_t p, float x)
   }
   return result;
 }
-/
+
 /*  retourne un nouveau polynome correspondant à la multiplication des 2 polynomes passés en arguments
  *  La mécanique d'addition ici est de :
  *  1 : Creation d'un polynome vide p_result(0 monome) (dans le but d'y inserer tout les monomes ensuite)

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "poly_creux_tom.h"
+#include "poly_creux.h"
 
 #include <x86intrin.h>
 

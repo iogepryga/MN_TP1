@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "poly_creux_loris.h"
+#include "poly_creux.h"
 
 
 int main(int argc, char *argv[]) {
