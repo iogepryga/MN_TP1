@@ -42,3 +42,4 @@ p_polyf_creux_t composition_polynome (p_polyf_creux_t p, p_polyf_creux_t q) ;
 
 float puiss_float(float x, int deg ) ;
 
+int contient_int(int nb, int* tab, int len);

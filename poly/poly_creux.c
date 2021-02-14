@@ -333,5 +333,3 @@ p_polyf_creux_t composition_polynome (p_polyf_creux_t p, p_polyf_creux_t q)
   //return NULL;
 }
 
-
-
